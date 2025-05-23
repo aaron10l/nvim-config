@@ -8,4 +8,16 @@ return {
       keys[#keys + 1] = { "<C-k>", false, mode = "i" }
     end,
   },
+  {
+    "folke/noice.nvim",
+    opts = {
+      lsp = {
+        signature = {
+          auto_open = {
+            enabled = false,
+          },
+        },
+      },
+    },
+  }, -- This closing brace was missing
 }
